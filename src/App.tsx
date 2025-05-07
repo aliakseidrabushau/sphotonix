@@ -1,34 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Suspense } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './core/router'
+import './locales/config'
+import { ThemeProvider } from 'styled-components'
+import { useDynamicHeight } from './core/hooks'
+import { GlobalStyles, theme } from './core/theme'
+import { FallBack } from './components'
+
+// TODO: add font
+// TODO: add checkbox + popup on form screen
+// TODO: q6 - add logic for input
+// TODO: signup - add logic for input + radio buttons
+// TODO: setup loader and alert components and logic
 
 function App() {
-  const [count, setCount] = useState(0)
+  useDynamicHeight()
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Suspense fallback={<FallBack />}>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+      </Suspense>
+    </ThemeProvider>
   )
 }
 
