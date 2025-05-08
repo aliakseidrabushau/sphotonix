@@ -1,0 +1,3 @@
+import{d as u,u as c,a as p,r as l,j as e}from"./index-Bm4aNRBx.js";import{u as m,a as d}from"./index-Dy78uoYe.js";import{Q as g}from"./index-CuoxntWu.js";import{I as x}from"./index-B4HB_4m8.js";import"./index-BroN-mPa.js";const f=u.div`
+  padding-top: 16px;
+`,N=()=>{const{t}=c(),a=p(),s=m(),[i,r]=l.useState(""),o=t("whats_driving_your"),n=["regulatory_requirements","scientific_data","media_archiving","sensitive_information","future_proofing","digital_preservation","other"];return d(),e.jsxs("div",{className:"scrollable",children:[e.jsx(g,{answers:n,title:o,onContinueClick:()=>a(s),isMultiChoice:!0}),e.jsx(f,{children:e.jsx(x,{value:i,placeholder:t("please_specify"),onChange:r})})]})};export{N as default};

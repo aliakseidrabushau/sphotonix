@@ -1,1 +1,0 @@
-import{u as i,j as r,c as a}from"./index-DgiIYeDE.js";const l=({children:t,onClick:n,customId:o="continue-button",customStyles:s="",...u})=>{const{t:e}=i();return r.jsx(a,{id:o,onClick:n,$customStyles:s,...u,children:t??e("Continue")})};export{l as C};

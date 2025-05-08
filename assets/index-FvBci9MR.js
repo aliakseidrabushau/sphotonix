@@ -1,3 +1,0 @@
-import{d as u,u as p,a as c,r as m,j as e}from"./index-DgiIYeDE.js";import{u as l,a as d}from"./index--ZbU8hxp.js";import{Q as g}from"./index-B0ccIWyE.js";import{I as x}from"./index-nw_bu8Iv.js";import"./index-PzL_QA7L.js";const f=u.div`
-  padding-top: 16px;
-`,P=()=>{const{t}=p(),a=c(),s=l(),[r,i]=m.useState(""),o=t("whats_driving_your"),n=["regulatory_requirements","scientific_data","media_archiving","sensitive_information","future_proofing","digital_preservation","other"];return d(),e.jsxs(e.Fragment,{children:[e.jsx(g,{answers:n,title:o,onContinueClick:()=>a(s),isMultiChoice:!0}),e.jsx(f,{children:e.jsx(x,{value:r,placeholder:t("please_specify"),onChange:i})})]})};export{P as default};

@@ -1,23 +1,23 @@
-import{d as i,l as p,u as y,r as v,j as e}from"./index-DgiIYeDE.js";import{C as L}from"./index-PzL_QA7L.js";const E=300,$=()=>(t,n=E)=>{setTimeout(()=>t(),n)},C=i.div`
+import{d as s,l as p,u as y,r as v,j as e}from"./index-Bm4aNRBx.js";import{C as L}from"./index-BroN-mPa.js";const E=300,$=()=>(t,n=E)=>{setTimeout(()=>t(),n)},C=s.div`
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
   text-align: left;
   white-space: pre-line;
-`,A=i.div`
+`,A=s.div`
   font-size: 18px;
   line-height: 28px;
   text-align: left;
   white-space: pre-line;
   color: #C9CCE2;
   margin-top: 16px;
-`,I=i.div`
+`,I=s.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 32px;
-`,T=i.div(({$multiChoice:t,$isActive:n})=>p`
+`,T=s.div(({$multiChoice:t,$isActive:n})=>p`
     display: flex;
     align-items: center;
     width: 100%;
@@ -39,7 +39,7 @@ import{d as i,l as p,u as y,r as v,j as e}from"./index-DgiIYeDE.js";import{C as 
     &:not(:first-child) {
       margin-top: 8px;
     }
-  `),z=i.div(({$isActive:t})=>p`
+  `),z=s.div(({$isActive:t})=>p`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@ import{d as i,l as p,u as y,r as v,j as e}from"./index-DgiIYeDE.js";import{C as 
     left: 16px;
     transform: translateY(-50%);
     transition: background-color .3s;
-  `),D=i.div(({$isActive:t})=>p`
+  `),D=s.div(({$isActive:t})=>p`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,4 +67,4 @@ import{d as i,l as p,u as y,r as v,j as e}from"./index-DgiIYeDE.js";import{C as 
     left: 16px;
     transform: translateY(-50%);
     transition: background-color .3s;
-  `),O=({isMultiChoice:t=!1,title:n,subtitle:x,answers:h,onContinueClick:g,radioButtons:c=!1})=>{const{t:u}=y(),b=$(),[a,f]=v.useState([]),m=(s,r)=>{const o=s.key,k=()=>{t?f((d=>d.includes(o)?d.filter(w=>w!==o):d.concat([o]))(a)):(f([o]),c||b(()=>g(s.key)))},l=a.includes(o);return e.jsxs(T,{onClick:k,$multiChoice:t||c,$isActive:l,id:`option-${r+1}`,children:[t?e.jsx(z,{$isActive:l,children:e.jsx("svg",{width:"12",height:"9",viewBox:"0 0 12 9",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:e.jsx("path",{d:"M2 4.4L5 8L10 2",stroke:l?"white":"transparent",strokeWidth:"1.5",strokeLinecap:"square",strokeLinejoin:"round"})})}):c&&e.jsx(D,{$isActive:l}),s.content]},r)},j=s=>s.map(r=>({content:u(r),key:r}));return e.jsxs(e.Fragment,{children:[e.jsx(C,{children:n}),x&&e.jsx(A,{children:x}),e.jsx(I,{children:j(h).map(m)}),t&&e.jsx(L,{onClick:()=>g(a),disabled:a.length===0})]})};export{O as Q};
+  `),Q=({isMultiChoice:t=!1,title:n,subtitle:x,answers:h,onContinueClick:g,radioButtons:c=!1})=>{const{t:u}=y(),b=$(),[a,f]=v.useState([]),m=(i,r)=>{const o=i.key,k=()=>{t?f((d=>d.includes(o)?d.filter(w=>w!==o):d.concat([o]))(a)):(f([o]),c||b(()=>g(i.key)))},l=a.includes(o);return e.jsxs(T,{onClick:k,$multiChoice:t||c,$isActive:l,id:`option-${r+1}`,children:[t?e.jsx(z,{$isActive:l,children:e.jsx("svg",{width:"12",height:"9",viewBox:"0 0 12 9",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:e.jsx("path",{d:"M2 4.4L5 8L10 2",stroke:l?"white":"transparent",strokeWidth:"1.5",strokeLinecap:"square",strokeLinejoin:"round"})})}):c&&e.jsx(D,{$isActive:l}),i.content]},r)},j=i=>i.map(r=>({content:u(r),key:r}));return e.jsxs("div",{className:"scrollable",children:[e.jsx(C,{children:n}),x&&e.jsx(A,{children:x}),e.jsx(I,{children:j(h).map(m)}),t&&e.jsx(L,{onClick:()=>g(a),disabled:a.length===0})]})};export{Q};
