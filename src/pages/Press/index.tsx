@@ -18,7 +18,7 @@ const Press = () => {
   usePreloadNextPage()
 
   return (
-    <>
+    <div className={'scrollable'}>
       <S.Title>{t('press_title')}</S.Title>
       <S.Quote>{t('press_quote')}</S.Quote>
       <S.PressLogos>
@@ -28,7 +28,7 @@ const Press = () => {
         onClick={() => navigate(nextPage)}
         customStyles={'bottom:60px;'}
       />
-    </>
+    </div>
   )
 }
 

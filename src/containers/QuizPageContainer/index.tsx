@@ -79,7 +79,7 @@ export const QuizPageContainer = ({
   }))
 
   return (
-    <>
+    <div className={'scrollable'}>
       <S.Title>{title}</S.Title>
       {subtitle && <S.Subtitle>{subtitle}</S.Subtitle>}
       <S.OptionsList>
@@ -91,6 +91,6 @@ export const QuizPageContainer = ({
           disabled={activesList.length === 0}
         />
       )}
-    </>
+    </div>
   )
 }

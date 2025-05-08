@@ -28,7 +28,7 @@ const Q6 = () => {
   usePreloadNextPage()
   
   return (
-    <>
+    <div className={'scrollable'}>
       <QuizPageContainer
         {...{ answers, title }}
         onContinueClick={() => navigate(nextPage)}
@@ -37,7 +37,7 @@ const Q6 = () => {
       <S.InputWrapper>
         <Input value={value} placeholder={t('please_specify')} onChange={setValue} />
       </S.InputWrapper>
-    </>
+    </div>
   )
 }
 

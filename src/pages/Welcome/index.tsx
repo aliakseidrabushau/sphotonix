@@ -11,7 +11,7 @@ const WelcomeScreen = () => {
   usePreloadNextPage()
 
   return (
-    <>
+    <div className={'scrollable'}>
       <S.Logo />
       <S.Title>{t('welcome_title')}</S.Title>
       <S.Subtitle>{t('welcome_description')}</S.Subtitle>
@@ -19,7 +19,7 @@ const WelcomeScreen = () => {
         onClick={() => navigate(nextPage)}
         customStyles={'bottom:60px;'}
       />
-    </>
+    </div>
   )
 }
 

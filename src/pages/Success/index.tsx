@@ -9,14 +9,14 @@ const WelcomeScreen = () => {
   }
   
   return (
-    <>
+    <div className={'scrollable'}>
       <S.Logo />
       <S.Title>{t('success_title')}</S.Title>
       <S.Subtitle>{t('success_description')}</S.Subtitle>
       <ContinueButton onClick={onContinueClick}>
         {t('lets_do_it')}
       </ContinueButton>
-    </>
+    </div>
   )
 }
 

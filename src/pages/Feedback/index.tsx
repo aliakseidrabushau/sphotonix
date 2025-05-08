@@ -44,12 +44,12 @@ const Feedback = () => {
   usePreloadNextPage()
 
   return (
-    <>
+    <div className={'scrollable'}>
       <S.Title>{t('you_are_not_alone')}</S.Title>
       <S.Subtitle>{t('we_agree')}</S.Subtitle>
       <S.List>{list.map(renderList)}</S.List>
       <ContinueButton onClick={() => navigate(nextPage)} />
-    </>
+    </div>
   )
 }
 

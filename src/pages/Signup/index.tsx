@@ -49,7 +49,7 @@ const Signup = () => {
   }, [isSuccess, paymentSettingsStatus, navigate, sendEvents, nextPage]);*/
 
   return (
-    <>
+    <div className={'scrollable'}>
       <QuizPageContainer
         {...{ answers, title }}
         onContinueClick={() => navigate(nextPage)}
@@ -62,7 +62,7 @@ const Signup = () => {
         onChange={setValue}
       />
       <ContinueButton onClick={submitEmail} disabled={!isValid} {...buttonStyles} />
-    </>
+    </div>
   )
 }
 

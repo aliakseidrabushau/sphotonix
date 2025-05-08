@@ -15,8 +15,6 @@ export const MainLayout = ({
     $pt={pt}
     $pb={pb}
   >
-    <div className={'scrollable'}>
-      {children}
-    </div>
+    {children}
   </S.StyledLayout>
 )

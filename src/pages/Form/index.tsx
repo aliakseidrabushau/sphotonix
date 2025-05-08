@@ -32,13 +32,13 @@ const Form = () => {
   usePreloadNextPage()
   
   return (
-    <>
+    <div className={'scrollable'}>
       <S.Title>{t('your_details')}</S.Title>
       <S.Form>{inputs.map(renderInput)}</S.Form>
       <ContinueButton onClick={() => navigate(nextPage)}>
         {t('send')}
       </ContinueButton>
-    </>
+    </div>
   )
 }
 
