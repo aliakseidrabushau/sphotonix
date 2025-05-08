@@ -1,0 +1,1 @@
+import{u as n,a as r,j as u}from"./index-Bt_8E_Vb.js";import{u as i,a as m}from"./index-BexP4_cM.js";import{Q as c}from"./index-xvy7wNkK.js";import"./index-CHHhpnhA.js";const f=()=>{const{t}=n(),a=r(),e=i(),s=t("value_of_your_data"),o=["$0-1K","$1-10K","$10-100K","$100K+"];return m(),u.jsx(c,{answers:o,title:s,onContinueClick:()=>a(e)})};export{f as default};
