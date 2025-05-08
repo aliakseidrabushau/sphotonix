@@ -1,3 +1,3 @@
-import{d as u,u as p,a as c,r as m,j as e}from"./index-DH3vF_QL.js";import{u as l,a as d}from"./index-Bqu42TVi.js";import{Q as g}from"./index-VWsAIwOk.js";import{I as x}from"./index-t5v-ZHFv.js";import"./index-idpbkrpS.js";const f=u.div`
+import{d as u,u as p,a as c,r as m,j as e}from"./index-DsmYoV4c.js";import{u as l,a as d}from"./index-CUuh3MLD.js";import{Q as g}from"./index-iIbxZBEv.js";import{I as x}from"./index-Cm4K0H8D.js";import"./index-CWB6Z5f5.js";const f=u.div`
   padding-top: 16px;
 `,P=()=>{const{t}=p(),a=c(),s=l(),[r,i]=m.useState(""),o=t("whats_driving_your"),n=["regulatory_requirements","scientific_data","media_archiving","sensitive_information","future_proofing","digital_preservation","other"];return d(),e.jsxs(e.Fragment,{children:[e.jsx(g,{answers:n,title:o,onContinueClick:()=>a(s),isMultiChoice:!0}),e.jsx(f,{children:e.jsx(x,{value:r,placeholder:t("please_specify"),onChange:i})})]})};export{P as default};
